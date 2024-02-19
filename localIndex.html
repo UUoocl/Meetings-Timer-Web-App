@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <title>Timer App</title>
+  </head>
+  <body>
+    <div id="Grid" class="container">
+      <div id="Section" class="Section"></div>
+      <div id="Name" class="Name"></div>
+      <div id="Minutes" class="Minutes"></div>
+    </div>
+
+    <script>
+      let SHEET_ID = "Your-Sheet-ID-Goes-Here";
+      let SHEET_TITLE = "OBS";
+      let SHEET_RANGE = "A1:D2";
+      var data;
+      let FULL_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${SHEET_TITLE}&range=${SHEET_RANGE}`;
+
+      async function fetchData() {
+        fetch(FULL_URL)
+          .then((res) => res.text())
+          .then((rep) => {
+            data = JSON.parse(rep.substr(47).slice(0, -2));
+            console.log(data);
+
+            let varName = document.getElementById("Name");
+            let varSection = document.getElementById("Section");
+            let varMinutes = document.getElementById("Minutes");
+            let length = data.table.rows.length;
+
+            varName.innerHTML = data.table.rows[1].c[1].v;
+            varSection.innerHTML = data.table.rows[1].c[0].v;
+            varMinutes.innerHTML = data.table.rows[1].c[2].v;
+            let varBGcolor = data.table.rows[1].c[3].v;
+            console.log(varBGcolor);
+            document.body.style.backgroundColor = varBGcolor;
+          });
+      }
+
+      setInterval(fetchData, 2000);
+    </script>
+  </body>
+</html>
