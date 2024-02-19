@@ -15,7 +15,7 @@ GoogleSheets-->LocalHTML;
 # Setup
 Google Sheet with Google App Script--> [Copy Google Sheet and script for the Timer App](https://docs.google.com/spreadsheets/d/1YbaUzI7DMh1Orqz31gqL0c4pw2PeIC1uXLST0YoQpbw/copy)
 
-HTML file to display Google Sheet content in 
+HTML file to display Google Sheet content in OBS [local HTML file](https://github.com/UUoocl/Timer-Web-App/blob/main/localIndex.html)
 
 OBS -->[OBS project](https://obsproject.com/)
 
