@@ -13,14 +13,14 @@ GoogleSheets-->LocalHTML;
 ```
 
 # Setup
-Example Google Sheet with Google App Script-->Copy Google Sheet
+Google Sheet with Google App Script--> [Copy Google Sheet and script for the Timer App](https://docs.google.com/spreadsheets/d/1YbaUzI7DMh1Orqz31gqL0c4pw2PeIC1uXLST0YoQpbw/copy)
 
-Google App Script and WebApp HTML,JS,CSS code -->Copy Google Apps Script
+HTML file to display Google Sheet content in 
 
-HTML file to display Google Sheet content is OBS -->
+OBS -->[OBS project](https://obsproject.com/)
 
-[OBS project]()
+[Zoom.us](https://zoom.us/)
 
-[Zoom.us]()
+
 
 
