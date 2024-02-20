@@ -6,50 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timer App</title>
     <style>
-      .container {
-        display: grid;
-        grid-template-columns: 100px 200px 300px;
-        grid-template-rows: 30% 50% 20%;
-        gap: 6px 0px;
-        grid-auto-flow: row;
-        /* justify-items: center; */
-        grid-template-areas:
-          "Section Section Section"
-          "Name Name Name"
-          "Minutes Minutes Minutes";
-      }
-
-      .Section {
-        grid-area: Section;
-        font-size: 3vw;
+      .flex-container {
+        width: 1280px;
+        display: flex;
+        justify-content: center;
         font-family: Arial;
+        flex-direction: column;
       }
 
-      .Name {
-        text-justify: center;
-        overflow-wrap: break-word;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-        font-size: 3vw;
-        grid-area: Name;
+      .flex-container .Section {
+        width: 100%;
+        margin: 1px;
+        text-align: center;
+        line-height: 200px;
+        font-size: 130px;
       }
 
-      .Minutes {
-        font-size: 3vw;
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-        grid-area: Minutes;
+      .flex-container .Name {
+        width: 100%;
+        margin: 1px;
+        text-align: center;
+        line-height: 150px;
+        font-size: 130px;
+      }
+
+      .flex-container .Minutes {
+        width: 100%;
+        margin: 1px;
+        text-align: center;
+        line-height: 300px;
+        font-size: 100px;
       }
     </style>
   </head>
   <body>
-    <div id="Grid" class="container">
+    <div id="Grid" class="flex-container">
       <div id="Section" class="Section"></div>
       <div id="Name" class="Name"></div>
       <div id="Minutes" class="Minutes"></div>
     </div>
 
     <script>
-      let SHEET_ID = "Your-Sheet-ID-Goes-Here";
+      let SHEET_ID = "1tX61U0VT6MRayuwqZclI7Tyxlm06IBW4S2RWE2A4Jmg";
       let SHEET_TITLE = "OBS";
       let SHEET_RANGE = "A1:D2";
       var data;
