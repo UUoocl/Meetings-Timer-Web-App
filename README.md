@@ -44,6 +44,31 @@ Click Deploy --> New Deployment
 
 <img width="745" alt="image" src="https://github.com/UUoocl/Timer-Web-App/assets/99063397/356ba775-a84e-49b7-b879-4a0316114e9d">
 
+## Local HTML File
+
+Download localIndex.html from this repo.  Change line 50 to include your Sheets ID
 
 ## configure OBS
+
+In OBS, add a Browser Source to a Scene. 
+
+Start the virtual Camera
+
+## Zoom
+
+In a Zoom meeting set the Camera to "OBS - Virtual Camera"
+
+# Using the Timer App
+
+1. Select an agenda item by clicking a row in the table. 
+
+![image](https://github.com/UUoocl/Timer-Web-App/assets/99063397/e7392fb1-6539-4378-8a71-4fd0cf01689c)
+
+2. Click the "Start" button to begin the timer. As the timer runs the localIndex.html file will change the background color to green, yellow and red.
+
+3. Click the "Stop" button to stop the clock and record the time.  
+
+4. Click "Reset" to return the timer to "00:00"
+
+5. step 1. 
 
